@@ -1,4 +1,4 @@
-**ARCoT: Agentic Revision of Chain-of-Thought**
+# ARCoT: Agentic Revision of Chain-of-Thought
 
 **License: © Deniz Askin**
 
@@ -15,7 +15,7 @@ This results in a dramatically enhanced accuracy, explainability, and robustness
 
 ⸻
 
-🎯 **Motivation**
+# 🎯 Motivation
 
 - **Why Revise Reasoning Instead of Prompts?**
  
@@ -29,7 +29,7 @@ By embedding a Judge-Agent and a Revision-Agent within the workflow, ARCoT enabl
 
 ⸻
 
-🧠 **ARCoT Architecture**
+# 🧠 ARCoT Architecture
 
 ![workflow_graph_ARCoT_1](https://github.com/user-attachments/assets/74dba190-766b-4043-be07-a5a3f7776eee)
 
@@ -52,7 +52,7 @@ Evaluates the answer and the chain-of-thought, producing:
   
 ⸻
 
-📈 **Example Workflow Execution**
+# 📈 Example Workflow Execution
 	•	**Initial Run:**
 The agent answers a question incorrectly due to flawed CoT.
 	•	**Judge Output:**
@@ -66,7 +66,7 @@ If judged Correct, the workflow terminates; otherwise, it repeats refinement.
 
 ⸻
 
-⚙️ **Technologies Used**
+# ⚙️ Technologies Used
 ```bash
 - Streamlit: Interactive front-end for user interactions.
 - LangChain, LangGraph: LLM chaining and agentic orchestration.
@@ -78,7 +78,7 @@ If judged Correct, the workflow terminates; otherwise, it repeats refinement.
 ```
 ⸻
 
-🧩 **Installation**
+# 🧩 Installation
 ```bash
 pip install -r requirements.txt
 ```
@@ -92,7 +92,7 @@ PROJECT_ID=your-ibm-project-id
 
 ⸻
 
-▶️ Running the Application
+# ▶️ Running the Application
 ```bash
 python main.py
 ```
@@ -104,7 +104,7 @@ python main.py
 ```
 ⸻
 
-✨ **Key Innovations**
+# ✨ Key Innovations
 	•	CoT-Aware Critiquing and Revision:
 First practical framework for autonomous chain-of-thought refinement.
 	•	Feedback-Guided Self-Correction:
@@ -116,13 +116,13 @@ ARCoT workflow can be expanded to multi-agent debates and collaborative revision
 
 ⸻
 
-📊 **Experimental Results**
+# 📊 Experimental Results
 - In verbal reasoning benchmarks (e.g., Northeastern University’s Verbal Reasoning Challenge), ARCoT outperformed standard single-run DeepSeek-r1 even with lower token budgets.
 - Improved handling of multi-step reasoning tasks where single-shot LLM outputs often fail.
 
 ⸻
 
-🚀 **Future Directions**
+# 🚀 Future Directions
 - Integrating Retrieval-Augmented CoT Revision.
 - Applying Multi-Agent Critique and Consensus.
 - Extending to Complex Reasoning Benchmarks beyond verbal logic (e.g., symbolic math, program synthesis).
